@@ -34,7 +34,7 @@ sudo systemctl start docker
 echo "Enabling Docker service auto-start."/n
 sudo systemctl enable docker
 echo "Setting user pi to docker group."/n
-sudo user mod -aG docker "$(whoami)"
+sudo usermod -aG docker "$(whoami)"
 echo "Docker configured"/n
 echo "Downloading georgegeorgulasiv/docker-chilipeppr-grbl"/n
 docker pull georgegeorgulasiv/docker-chilipeppr-grbl
